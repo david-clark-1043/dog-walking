@@ -6,6 +6,7 @@ const walkers = getWalkers()
 
 
 // Function whose responsibility is to find the walker assigned to a pet
+// function called later as findPetWalker() so changed to that
 const findPetWalker = (pet, allWalkers) => {
     let petWalker = null
 
@@ -19,8 +20,8 @@ const findPetWalker = (pet, allWalkers) => {
 }
 
 export const Assignments = () => {
-    let assignmentHTML = ""
-    assignmentHTML = "<ul>"
+    let assignmentHTML = "<ul>"
+    // assignmentHTML = "<ul>" this line is unecessary
 
     for (const currentPet of pets) {
         const currentPetWalker = findPetWalker(currentPet, walkers)
