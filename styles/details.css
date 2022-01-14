@@ -1,11 +1,12 @@
 .details {
-    display: fle;
+    display: flex; /* display: fle; instead of flex */
     justify-content: space-evenly;
 }
 
 .detail--column {
     flex-basis: 24%;
     margin: 0 2rem;
+    padding: 1em;
     border: 1px dotted goldenrod;
 }
 
