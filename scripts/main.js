@@ -4,7 +4,7 @@ import { Assignments } from "./Assignments.js"
 import { RegisteredPets } from "./RegisteredPets.js"
 
 const mainContainer = document.querySelector("#container")
-// needed 's // needed ${Walkers()}
+// needed 's // needed ${RegisteredPets()}
 const applicationHTML = `
 <h1>DeShawn's Dog Walking</h1>
 <article class="details">
