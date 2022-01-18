@@ -10,6 +10,7 @@ document.addEventListener(
             for (const walker of walkers) {
                 if (walker.id === parseInt(walkerId)) {
                     window.alert(`${walker.name} services ${walker.city}`)
+                    break;
                 }
             }
         }
