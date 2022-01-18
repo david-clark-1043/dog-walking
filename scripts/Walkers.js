@@ -1,3 +1,4 @@
+import { buildCityString } from "./CityWalkers.js"
 import { getWalkers } from "./database.js"
 
 document.addEventListener(
@@ -9,7 +10,8 @@ document.addEventListener(
 
             for (const walker of walkers) {
                 if (walker.id === parseInt(walkerId)) {
-                    window.alert(`${walker.name} services ${walker.city}`)
+                    let cities = buildCityString(walker.id)
+                    window.alert(`${walker.name} services ${cities}`)
                     break;
                 }
             }
