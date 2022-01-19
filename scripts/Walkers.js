@@ -1,4 +1,4 @@
-import { buildCityString } from "./CityWalkers.js"
+import { getCitiesForWalker, buildCityString } from "./CityWalkers.js"
 import { getWalkers } from "./database.js"
 
 document.addEventListener(
@@ -10,7 +10,7 @@ document.addEventListener(
 
             for (const walker of walkers) {
                 if (walker.id === parseInt(walkerId)) {
-                    const assignments = getCitiesForWalker(walkerId)
+                    const assignments = getCitiesForWalker(parseInt(walkerId))
                     const cities = buildCityString(assignments)
                     window.alert(`${walker.name} services ${cities}`)
                     break;
