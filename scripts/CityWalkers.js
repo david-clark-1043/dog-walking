@@ -26,9 +26,8 @@ export const getCityName = (idOfCity) => {
 
 }
 
-export const buildCityString = (walkerId) => {
+export const buildCityString = (citiesForWalker) => {
     
-    const citiesForWalker = getCitiesForWalker(walkerId)
     let cityArray = []
 
     for(const walkerCity of citiesForWalker){

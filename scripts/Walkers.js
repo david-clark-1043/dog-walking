@@ -10,7 +10,8 @@ document.addEventListener(
 
             for (const walker of walkers) {
                 if (walker.id === parseInt(walkerId)) {
-                    let cities = buildCityString(walker.id)
+                    const assignments = getCitiesForWalker(walkerId)
+                    const cities = buildCityString(assignments)
                     window.alert(`${walker.name} services ${cities}`)
                     break;
                 }
