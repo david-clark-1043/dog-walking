@@ -18,12 +18,8 @@ export const getCitiesForWalker = (idOfWalker) => {
 
 export const getCityName = (idOfCity) => {
     const cities = getCities()
-    for(const city of cities) {
-        if(city.id === idOfCity) {
-            return city.name
-        }
-    }
-
+    const foundCity = cities.find( city => city.id === idOfCity)
+    return foundCity.name
 }
 
 export const buildCityString = (citiesForWalker) => {
@@ -54,7 +50,7 @@ export const buildCityString = (citiesForWalker) => {
 
         return cityString
     }
-
+    // if cityArray.length === 0 - return error
     return "Error Number of Cities Serviced is Zero."
 
 }
