@@ -1,4 +1,4 @@
-import { getWalkerCities, getCities } from "./database.js"
+import { getWalkerCities, getCityName } from "./database.js"
 
 // const cities = getCities()
 
@@ -16,11 +16,7 @@ export const getCitiesForWalker = (idOfWalker) => {
 
 }
 
-export const getCityName = (idOfCity) => {
-    const cities = getCities()
-    const foundCity = cities.find( city => city.id === idOfCity)
-    return foundCity.name
-}
+
 
 export const buildCityString = (citiesForWalker) => {
     
