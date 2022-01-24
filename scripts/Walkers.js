@@ -4,7 +4,7 @@ import { getWalkers } from "./database.js"
 document.addEventListener(
     "click",
     (clickEvent) => {
-        const itemClicked = clickEvent.target
+        const itemClicked = clickEvent.targets
         if (itemClicked.id.startsWith("walker")) {
             const [,walkerId] = itemClicked.id.split("--")
 
